@@ -1,0 +1,59 @@
+# Browser Hotkeys :
+super + c
+      firefox-developer-edition
+
+super + shift + c
+      firefox-developer-edition --private-window
+
+# Emoji picker :
+super + o
+      dmenuunicode
+
+# screenshot :
+super + shift + t
+      flameshot gui
+
+# pause mpv with 'XF86AudioPause' & 'XF86AudioPlay'
+{XF86AudioPause, Pause}
+    ~/.config/polybar/scripts/mpv-toggle.py
+
+XF86AudioPlay
+    ~/.config/polybar/scripts/mpv-toggle.py
+
+# dunst pop history
+super + shift + n
+      dunstctl history-pop
+
+# Dmenu Scripts
+super + space
+      rofi -show run
+
+super + d
+      rofi -show drun
+
+# Launch Terminal
+super + Return
+      alacritty -e fish -C "neofetch | lolrush"
+
+
+# Adjust Volume with 'XF86****' keys
+# Use pactl to adjust volume in PulseAudio.
+XF86AudioRaiseVolume
+    pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+XF86AudioLowerVolume
+    pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+XF86AudioMute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+XF86AudioMicMute
+    pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+# Launch Ranger in cool_retro_terminal
+super + shift + m
+    alacritty -e ranger ~/Media/Songs
+
+# Greenclip
+ctrl + alt + h
+    rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
