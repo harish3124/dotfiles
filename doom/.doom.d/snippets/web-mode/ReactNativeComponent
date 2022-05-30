@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: React Native Component
+# uuid:
+# key: component
+# condition: rnfce
+# --
+
+import { $1 } from 'react-native';
+
+const ${2:`(f-base buffer-file-name)`} = (props) => (
+  $0
+);
+
+export default $1;

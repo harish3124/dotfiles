@@ -6,7 +6,6 @@ return require('packer').startup(function(use)
 		'williamboman/nvim-lsp-installer'
 	}
 
-
 	use {
 		'hrsh7th/nvim-cmp', -- Autocompletion plugin
 		'hrsh7th/cmp-nvim-lsp', -- LSP source for nvim-cmp
@@ -39,5 +38,9 @@ return require('packer').startup(function(use)
 	}
 	use 'p00f/nvim-ts-rainbow'
 
-	use 'marko-cerovac/material.nvim'
+	use {
+		"catppuccin/nvim",
+		as = "catppuccin"
+	}
+
 end)

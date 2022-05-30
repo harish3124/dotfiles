@@ -17,7 +17,7 @@ require('lsp')
 require('cmpConfig')
 require('luaLineConfig')
 require('treeSitterConfig')
-require('materialThemeConfig')
+require('themeConfig')
 require('telescopeConfig')
 
 
