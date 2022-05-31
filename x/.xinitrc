@@ -45,9 +45,9 @@ dunst &
 
 xinput set-prop 11 314 1
 
-fusuma -d &
-
 greenclip daemon &
+
+fusuma &
 
 sxhkd &
 

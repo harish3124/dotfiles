@@ -159,8 +159,10 @@ bindsym $mod+Delete exec ~/.config/i3/lock.sh
 for_window [class="mpv"] floating enable
 
 
-default_border pixel 5 
+default_border pixel 3
 client.focused          #ffffff #ffffff #ffffff #ffffff #74c7ec
+
+
 hide_edge_borders smart
 
 ################# i3-gaps #########################
@@ -168,3 +170,9 @@ gaps inner 5
 gaps outer 1
 gaps horizontal 2
 smart_gaps on
+
+
+################ Scratch Pads #####################
+for_window [class="music"] floating enable
+for_window [class="music"] move to scratchpad
+bindsym $mod+m [class="music"] scratchpad show; move position center

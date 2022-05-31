@@ -50,9 +50,8 @@ XF86AudioMute
 XF86AudioMicMute
     pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
-# Launch Ranger in cool_retro_terminal
-super + shift + m
-    alacritty -e ranger ~/Media/Songs
+super + shift + ctrl + m
+      killall ranger ; alacritty --class music,music -e ranger ~/Media/Songs/
 
 # Greenclip
 ctrl + alt + h
