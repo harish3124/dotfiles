@@ -66,32 +66,82 @@ window.opacity: 1.0
 
 # Colors ()
 schemes:
-  Ayu_Dark: &ayuDark
-    
+
+  Catppuccin_mocha: &mocha
+
+    # Default colors
     primary:
-      background: '0x0A0E14'
-      foreground: '0xB3B1AD'
+      background: '#1e1e2e' # base
+      foreground: '#cdd6f4' # text
+      # Bright and dim foreground colors
+      dim_foreground: '#cdd6f4' # text
+      bright_foreground: '#cdd6f4' # text
+
+    # Cursor colors
+    cursor:
+      text: '#1e1e2e' # base
+      cursor: '#f5e0dc' # rosewater
+    vi_mode_cursor:
+      text: '#1e1e2e' # base
+      cursor: '#b4befe' # lavender
+
+    # Search colors
+    search:
+      matches:
+        foreground: '#1e1e2e' # base
+        background: '#a6adc8' # subtext0
+      focused_match:
+        foreground: '#1e1e2e' # base
+        background: '#a6e3a1' # green
+      bar:
+        foreground: '#1e1e2e' # base
+        background: '#a6adc8' # subtext0
+
+    # Keyboard regex hints
+    hints:
+      start:
+        foreground: '#1e1e2e' # base
+        background: '#f9e2af' # yellow
+      end:
+        foreground: '#1e1e2e' # base
+        background: '#a6adc8' # subtext0
+
+    # Selection colors
+    selection:
+      text: '#1e1e2e' # base
+      background: '#f5e0dc' # rosewater
 
     # Normal colors
     normal:
-      black:   '0x01060E'
-      red:     '0xEA6C73'
-      green:   '0x91B362'
-      yellow:  '0xF9AF4F'
-      blue:    '0x53BDFA'
-      magenta: '0xFAE994'
-      cyan:    '0x90E1C6'
-      white:   '0xC7C7C7'
+      black:   '#45475a' # surface1
+      red:     '#f38ba8' # red
+      green:   '#a6e3a1' # green
+      yellow:  '#f9e2af' # yellow
+      blue:    '#89b4fa' # blue
+      magenta: '#f5c2e7' # pink
+      cyan:    '#94e2d5' # teal
+      white:   '#bac2de' # subtext1
 
     # Bright colors
     bright:
-      black:   '0x686868'
-      red:     '0xF07178'
-      green:   '0xC2D94C'
-      yellow:  '0xFFB454'
-      blue:    '0x59C2FF'
-      magenta: '0xFFEE99'
-      cyan:    '0x95E6CB'
-      white:   '0xFFFFFF'
+      black:   '#45475a' # surface1
+      red:     '#f38ba8' # red
+      green:   '#a6e3a1' # green
+      yellow:  '#f9e2af' # yellow
+      blue:    '#89b4fa' # blue
+      magenta: '#f5c2e7' # pink
+      cyan:    '#94e2d5' # teal
+      white:   '#bac2de' # subtext1
 
-colors: *ayuDark
+    # Dim colors
+    dim:
+      black:   '#45475a' # surface1
+      red:     '#f38ba8' # red
+      green:   '#a6e3a1' # green
+      yellow:  '#f9e2af' # yellow
+      blue:    '#89b4fa' # blue
+      magenta: '#f5c2e7' # pink
+      cyan:    '#94e2d5' # teal
+      white:   '#bac2de' # subtext1
+
+colors: *mocha

@@ -1,8 +1,11 @@
---Remap space as leader key
+-- Remap space as leader key
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- Window Title
+vim.opt.titlestring = "neovim"
+vim.cmd("set title")
 
 -- Line Numbers
 vim.wo.number = true

@@ -152,27 +152,19 @@ bindsym $mod+Mod2+KP_8 exec $HOME/.config/fusuma/empty.py
 #launch polybar :
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-# diable border :
-new_window none 
-
-# Mod+Tab for focus shift :
-bindsym $mod+Tab focus right
-
 # i3 lock :
 bindsym $mod+Delete exec ~/.config/i3/lock.sh
 
 # Exclusive floating windows
 for_window [class="mpv"] floating enable
 
-##### i3-gaps ##############
-for_window [class=".*"] border pixel 0
+
+default_border pixel 5 
+client.focused          #ffffff #ffffff #ffffff #ffffff #74c7ec
+hide_edge_borders smart
+
+################# i3-gaps #########################
 gaps inner 5
 gaps outer 1
-#gaps top 26
 gaps horizontal 2
-
-
-################# i3-radius #######################
-smart_borders on
-smart_borders no_gaps
-border_radius  10
+smart_gaps on
