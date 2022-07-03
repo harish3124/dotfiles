@@ -28,3 +28,8 @@ export QT_QPA_PLATFORMTHEME="qt5ct"
 
 # zoxide init
 zoxide init fish | source
+
+# pnpm
+set -gx PNPM_HOME "/home/harish/.local/share/pnpm"
+set -gx PATH "$PNPM_HOME" $PATH
+# pnpm end

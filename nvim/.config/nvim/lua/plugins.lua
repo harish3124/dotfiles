@@ -12,7 +12,6 @@ return require('packer').startup(function(use)
 		'saadparwaiz1/cmp_luasnip', -- Snippets source for nvim-cmp
 		'L3MON4D3/LuaSnip', -- Snippets plugin
 		"rafamadriz/friendly-snippets",
-		'windwp/nvim-autopairs', -- Auto Close Brackets
 	}
 
 	use {
@@ -34,6 +33,8 @@ return require('packer').startup(function(use)
 	}
 	use {
 		'nvim-treesitter/nvim-treesitter',
+		'windwp/nvim-autopairs', -- Auto Close Brackets
+		'windwp/nvim-ts-autotag',
 		run = ':TSUpdate'
 	}
 	use 'p00f/nvim-ts-rainbow'

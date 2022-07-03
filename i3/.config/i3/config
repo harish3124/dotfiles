@@ -145,9 +145,9 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # mod+PGUP and mod+PGDWN
-bindsym $mod+Mod2+KP_4 workspace prev
-bindsym $mod+Mod2+KP_6 workspace next
-bindsym $mod+Mod2+KP_8 exec $HOME/.config/fusuma/empty.py
+bindsym $mod+Ctrl+Left workspace prev
+bindsym $mod+Ctrl+Right workspace next
+bindsym $mod+Ctrl+Up exec $HOME/.config/fusuma/empty.py
 
 #launch polybar :
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
@@ -162,6 +162,7 @@ for_window [class="mpv"] floating enable
 default_border pixel 3
 client.focused          #ffffff #ffffff #ffffff #ffffff #74c7ec
 
+default_floating_border pixel 2
 
 hide_edge_borders smart
 

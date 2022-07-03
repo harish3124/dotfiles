@@ -43,7 +43,7 @@ nitrogen --restore &
 picom --experimental-backend &
 dunst &
 
-xinput set-prop 11 314 1
+xinput set-prop 11 306 1
 
 greenclip daemon &
 
